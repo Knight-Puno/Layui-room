@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.StudentMapper">
+
+    <insert id="addStu" parameterType="com.example.entity.Student">
+        INSERT INTO student(
+            sno,student_name,student_sex,
+            student_ago,rno,hno
+        )VALUES(#{sno},#{studentName},#{studentSex},
+                  #{studentAgo},#{rno},#{hno})
+    </insert>
+</mapper>
